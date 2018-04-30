@@ -48,11 +48,11 @@ end
 
 When ("I entered name and username and email id") do
 sleep 2
-@browser.find_element(id: "user_name").send_keys "deepigowda"
+@browser.find_element(id: "user_name").send_keys "deepihigowda"
 sleep 2
-@browser.find_element(id: "user_username").send_keys "deepikakd"
+@browser.find_element(id: "user_username").send_keys "deepikakdre"
 sleep 2
-@browser.find_element(id: "user_email").send_keys "dkgowda@gmail.com"
+@browser.find_element(id: "user_email").send_keys "kgowdah@gmail.com"
 end
 
 When ("I entered password and confirm password") do

@@ -5,7 +5,7 @@ browser =  Selenium::WebDriver.for :chrome
 
 
 
-Before do
+Before do  
   @browser = browser
 end
 
