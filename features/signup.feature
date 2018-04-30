@@ -1,4 +1,4 @@
-@demoqa
+@Bug-tracker
 Feature:  signup for demoqa
 As a user
 In order to signup for Bug-tracker
