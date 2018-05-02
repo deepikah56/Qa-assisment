@@ -1,24 +1,16 @@
-@Bug-tracker
-Feature:  signup for demoqa
-As a user
-In order to signup for Bug-tracker
-I need to be there in bug-tracker home page
+@User_signup_and_logout
+Feature:  As End user
+I should able to signup to the application
+So that I should be able to manage application
 
-@signup
-Scenario:user signup
-	Given I am in home page
-	When  I click on signup button
-	Then  I should able to see signup pop window
-
-@valid_input
-Scenario:user valid inputs
-	Given I am in sign up pop window
-	When  I entered name and username and email id
-	And   I entered password and confirm password 
-	Then  I should see the border color change to blue 
-@signout
-Scenario:user signout
-	Given I am in bug-tracker page
-	When  I click on signout button
-	Then  I should see home page
+@Smoke
+Scenario:Trying to signup with valid credentials
+	Given I am on Bug-tracker homepage
+	When I signup with valid credential
+	Then I should be able to sign in succesfully
+@Logout
+Scenario:logging out of the application
+	Given I am in dashboard page
+	When I click on signout button
+	Then I should see "Logged out!"
 
